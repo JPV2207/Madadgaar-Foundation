@@ -2,24 +2,21 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0" />
-    <title>Events Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Events</title>
+    <link rel="stylesheet" href="event.css" />
     <link
       rel="stylesheet"
-      href="event.css" />
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" />
+
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <div class="hero">
       <div class="hero-content">
         <h1>Join Us in Making a Difference</h1>
         <p>Together, we can create positive change in the world.</p>
-        <a
-          href="#event"
-          class="cta-button"
-          >Events Explore</a
-        >
+        <a href="#event" class="cta-button">Events Explore</a>
       </div>
     </div>
 
@@ -28,10 +25,14 @@
         <h1>Events</h1>
         <p>Join Us in Making a Difference</p>
       </div>
-
-      <div
-        class="card_wrapper"
-        id="event">
+      <div class="slider">
+        <div class="wrapper">
+          <i id="left" class="fa-solid fa-angle-left"></i>
+          <ul class="carousel" id="event">
+            <li class="card"></li>
+          </ul>
+          <i id="right" class="fa-solid fa-angle-right"></i>
+        </div>
       </div>
     </div>
 
@@ -64,6 +65,6 @@
       </div>
     </div>
 
-    <script src="./event.js"></script>
+    <script src="./event.js" defer></script>
   </body>
 </html>
